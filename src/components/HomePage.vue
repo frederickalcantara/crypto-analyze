@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <div class="hello">
+  <div class="container">
+    <div class="same">
       <h1>Same Stop/Limit Percent Calculation</h1>
       <label for="sameSatoshi">Satoshi:</label>
       <input class="space" type="number" name="sameSatoshi" :value="sameSatoshi" @keyup="updateSameSatoshi" @change="updateSameSatoshi" :input="positiveGain + negativeGain">
@@ -9,7 +9,7 @@
       <button class="space" type="submit" @click="positiveGain + negativeGain" >Calculate</button>
       <p><span class="space">Sell Limit: {{ positiveGain }}</span><span class="space">Stop Loss: {{ negativeGain }}</span></p>
     </div>
-    <div class="hello">
+    <div class="diff">
       <h1>Different Stop/Limit Percent Calculation</h1>
       <label for="diffSatoshi">Satoshi:</label>
       <input class="space" type="number" name="diffSatoshi" :value="diffSatoshi" @keyup="updateDiffSatoshi" @change="updateDiffSatoshi" :input="sellLimit + stopLoss">
@@ -71,28 +71,58 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-h1,
-h2 {
-	font-weight: normal;
+@media screen and (min-width: 800px) {
+	.container {
+		display: grid;
+		grid-template-columns: 15% auto 15%;
+		grid-template-rows: 40% auto;
+	}
+
+	.same {
+		grid-column-start: 2;
+		grid-column-end: 3;
+	}
+
+	.diff {
+		grid-column-start: 2;
+		grid-column-end: 3;
+	}
+
+	h1,
+	h2 {
+		font-weight: normal;
+	}
+	ul {
+		list-style-type: none;
+		padding: 0;
+	}
+	li {
+		display: inline-block;
+		margin: 0 10px;
+	}
+	a {
+		color: #35495e;
+	}
+	.percent {
+		width: 50px;
+	}
+	.space {
+		margin: 0 16px;
+	}
+	.percentSpace {
+		margin: 0 4px 0px 16px;
+	}
 }
-ul {
-	list-style-type: none;
-	padding: 0;
-}
-li {
-	display: inline-block;
-	margin: 0 10px;
-}
-a {
-	color: #35495e;
-}
-.percent {
-	width: 50px;
-}
-.space {
-	margin: 0 16px;
-}
-.percentSpace {
-	margin: 0 4px 0px 16px;
+@media screen and (max-width: 800px) {
+	label {
+		width: 100%;
+	}
+	input {
+		/* width: 40%; */
+	}
+	button {
+	}
+	p {
+	}
 }
 </style>
