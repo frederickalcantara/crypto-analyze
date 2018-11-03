@@ -123,7 +123,7 @@ export default {
 <style>
 .container {
 	display: grid;
-	grid-template-columns: 15% auto 15%;
+	grid-template-columns: 15% 1fr 15%;
 	grid-template-rows: 40% auto;
 }
 
@@ -187,5 +187,13 @@ input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
 	-webkit-appearance: none;
 	margin: 0;
+}
+
+@media screen and (max-width: 400px) {
+	.container {
+		display: grid;
+		grid-template-columns: 10px 1fr 10px;
+		grid-template-rows: 40% auto;
+	}
 }
 </style>
