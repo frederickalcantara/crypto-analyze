@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "https://cryptoanalyze.netlify.com/*"
+  to = "https://cryptoanalyze.app"
+  force = true
