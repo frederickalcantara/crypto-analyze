@@ -114,15 +114,14 @@ export default {
 	}
 }
 @media screen and (max-width: 800px) {
-	label {
-		width: 100%;
+	.percent {
+		width: 50px;
 	}
-	input {
-		/* width: 40%; */
+	.space {
+		margin: 0 16px;
 	}
-	button {
-	}
-	p {
+	.percentSpace {
+		margin: 0 4px 0px 16px;
 	}
 }
 </style>
