@@ -129,18 +129,14 @@ export default {
 
 .same {
 	grid-column-start: 2;
-	grid-column-end: 2;
+	grid-column-end: 3;
 	margin: 16px 0;
-	justify-items: center;
-	align-items: center;
 }
 
 .diff {
 	grid-column-start: 2;
-	grid-column-end: 2;
+	grid-column-end: 3;
 	margin: 16px 0;
-	justify-items: center;
-	align-items: center;
 }
 
 .sameInput {
