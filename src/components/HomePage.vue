@@ -2,23 +2,73 @@
   <div class="container">
     <div class="same">
       <h1>Same Stop/Limit Percent Calculation</h1>
-      <p><label for="sameSatoshi">Satoshi:</label>
-      <input class="space input-width" type="number" name="sameSatoshi" :value="sameSatoshi" @keyup="updateSameSatoshi" :input="positiveGain + negativeGain"></p>
-      <p><label for="Sell">Percent:</label>
-      <input class="percent percentSpace" type="number" name="samePercent" :value="samePercent" @keyup="updateSamePercent" :input="positiveGain + negativeGain">%</p>
-      <p class="space">Sell Limit: {{ positiveGain }}</p>
-      <p class="space">Stop Loss: {{ negativeGain }}</p>
+      <div class="sameInput">
+        <p>
+          <label for="sameSatoshi">Satoshi:</label>
+          <input
+            class="space input-width"
+            type="number"
+            pattern="^\d{1,}(\.\d{0,4})?$"
+            name="sameSatoshi"
+            :value="sameSatoshi"
+            @keyup="updateSameSatoshi"
+            :input="positiveGain + negativeGain"
+          >
+        </p>
+        <p class="percentSpace">
+          <label for="Sell">Percent: &nbsp;</label>
+          <input
+            class="percent"
+            type="number"
+            pattern="^\d{1,}(\.\d{0,4})?$"
+            name="samePercent"
+            :value="samePercent"
+            @keyup="updateSamePercent"
+            :input="positiveGain + negativeGain"
+          > %
+        </p>
+      </div>
+      <div class="sameOutput">
+        <p class="space">Sell Limit: {{ positiveGain }}</p>
+        <p class="space">Stop Loss: {{ negativeGain }}</p>
+      </div>
     </div>
     <div class="diff">
       <h1>Different Stop/Limit Percent Calculation</h1>
-      <p><label for="diffSatoshi">Satoshi:</label>
-      <input class="space input-width" type="number" name="diffSatoshi" :value="diffSatoshi" @keyup="updateDiffSatoshi" :input="sellLimit + stopLoss"></p>
-      <p><label for="Sell">Sell Limit:&nbsp;</label>
-      <input class="percent percentSpace" type="number" name="sellPercent" :value="sellPercent" @keyup="updateSellPercent" :input="sellLimit">%</p>
-      <p><label for="Stop">Stop Loss:</label>
-      <input class="percent percentSpace" type="number" name="stopPercent" :value="stopPercent" @keyup="updateStopPercent" :input="stopLoss">%</p>
+      <div class="diffInput">
+        <p>
+          <label for="diffSatoshi">Satoshi:</label>
+          <input
+            class="space input-width"
+            type="number"
+            pattern="^\d{1,}(\.\d{0,4})?$"
+            name="diffSatoshi"
+            :value="diffSatoshi"
+            @keyup="updateDiffSatoshi"
+            :input="sellLimit + stopLoss"
+          >
+        </p>
+        <p class="percentSpace">
+          <label for="Sell">Sell Limit: &nbsp;</label>
+          <input class="percent" type="number" pattern="^\d{1,}(\.\d{0,4})?$" name="sellPercent" :value="sellPercent" @keyup="updateSellPercent" :input="sellLimit"> %
+        </p>
+        <p class="percentSpace">
+          <label for="Stop">Stop Loss: &nbsp;</label>
+          <input
+            class="percent"
+            type="number"
+            pattern="^\d{1,}(\.\d{0,4})?$"
+            name="stopPercent"
+            :value="stopPercent"
+            @keyup="updateStopPercent"
+            :input="stopLoss"
+          > %
+        </p>
+      </div>
+      <div class="diffOutput">
       <p class="space">Sell Limit: {{ sellLimit }}</p>
       <p class="space">Stop Loss: {{ stopLoss }}</p>
+      </div>
     </div>
   </div>
 </template>
@@ -79,27 +129,42 @@ export default {
 
 .same {
 	grid-column-start: 2;
-	grid-column-end: 3;
+	grid-column-end: 2;
+	margin: 16px 0;
+	justify-items: center;
+	align-items: center;
 }
 
 .diff {
 	grid-column-start: 2;
-	grid-column-end: 3;
+	grid-column-end: 2;
+	margin: 16px 0;
+	justify-items: center;
+	align-items: center;
 }
 
-h1,
-h2 {
-	font-weight: normal;
+.sameInput {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-ul {
-	list-style-type: none;
-	padding: 0;
+.sameOutput {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-li {
-	display: inline-block;
-	margin: 0 10px;
+.diffInput {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.diffOutput {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 a {
@@ -115,10 +180,16 @@ a {
 }
 
 .space {
-	margin: 8px 16px;
+	margin: 0 8px;
 }
 
 .percentSpace {
-	margin: 0 2px 0px 16px;
+	margin: 0 16px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
 }
 </style>
