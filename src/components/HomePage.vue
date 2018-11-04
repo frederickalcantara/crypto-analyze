@@ -28,7 +28,7 @@
           >
         </p>
       </div>
-      <div class="sameOutput">
+      <div class="output">
         <p class="space">Sell Limit: {{ positiveGain }}</p>
         <p class="space">Stop Loss: {{ negativeGain }}</p>
       </div>
@@ -65,7 +65,7 @@
           >
         </p>
       </div>
-      <div class="diffOutput">
+      <div class="output">
         <p class="space">Sell Limit: {{ sellLimit }}</p>
         <p class="space">Stop Loss: {{ stopLoss }}</p>
       </div>
@@ -123,14 +123,13 @@ export default {
 <style>
 .container {
 	display: grid;
-	grid-template-columns: 15% 1fr 15%;
+	grid-template-columns: 10px 1fr 10px;
 	grid-template-rows: 40% auto;
 }
 
 .same {
 	grid-column-start: 2;
 	grid-column-end: 3;
-	margin: 12px 0;
 }
 
 .diff {
@@ -143,13 +142,6 @@ export default {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-direction: column;
-}
-
-.sameOutput {
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	flex-direction: row;
 }
 
@@ -157,19 +149,15 @@ export default {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-direction: row;
+	flex-direction: column;
 	flex-wrap: wrap;
 }
 
-.diffOutput {
+.output {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: row;
-}
-
-a {
-	color: #35495e;
 }
 
 .input-width {
@@ -181,11 +169,26 @@ a {
 }
 
 .samePercent {
-	width: 75%;
+	width: 95%;
+}
+
+.diffWidth {
+	width: 85%;
+}
+
+.space {
+	margin: 8px 8px;
+}
+
+.sameInput {
+	flex-direction: row;
+}
+.diffInput {
+	flex-direction: column;
 }
 
 .diffPercent {
-	width: 100%;
+	width: 40%;
 }
 
 .percentSpace {
@@ -201,35 +204,6 @@ input[type="number"]::-webkit-outer-spin-button {
 @media screen and (max-width: 800px) {
 	.container {
 		grid-template-columns: 10px 1fr 10px;
-	}
-}
-
-@media screen and (min-width: 801px) {
-	.diffWidth {
-		width: 100%;
-	}
-
-	.samePercent {
-		width: 50%;
-	}
-
-	.space {
-		margin: 8px 8px;
-	}
-
-	.sameInput {
-		flex-direction: row;
-	}
-	.diffInput {
-		flex-direction: column;
-	}
-
-	.diffPercent {
-		width: 40%;
-	}
-
-	.percentSpace {
-		margin: 8px 16px;
 	}
 }
 </style>
