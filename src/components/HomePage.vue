@@ -3,7 +3,7 @@
     <div class="same">
       <h1>Same Stop/Limit Percent Calculation</h1>
       <div class="sameInput">
-        <p>
+        <p class="satoshiSpace">
           <label for="sameSatoshi">Satoshi:</label>
           <input
             class="space input-width"
@@ -36,7 +36,7 @@
     <div class="diff">
       <h1>Different Stop/Limit Percent Calculation</h1>
       <div class="diffInput">
-        <p>
+        <p class="satoshiSpace">
           <label for="diffSatoshi">Satoshi:</label>
           <input
             class="space input-width"
@@ -130,13 +130,13 @@ export default {
 .same {
 	grid-column-start: 2;
 	grid-column-end: 3;
-	margin: 16px 0;
+	margin: 12px 0;
 }
 
 .diff {
 	grid-column-start: 2;
 	grid-column-end: 3;
-	margin: 16px 0;
+	margin: 12px 0;
 }
 
 .sameInput {
@@ -191,9 +191,39 @@ input[type="number"]::-webkit-outer-spin-button {
 
 @media screen and (max-width: 400px) {
 	.container {
-		display: grid;
 		grid-template-columns: 10px 1fr 10px;
-		grid-template-rows: 40% auto;
+	}
+
+	.diff {
+		margin-top: 24px;
+	}
+
+	.sameInput {
+		flex-direction: column;
+	}
+
+	.sameOutput {
+		flex-direction: column;
+	}
+
+	.diffInput {
+		flex-direction: column;
+	}
+
+	.diffOutput {
+		flex-direction: column;
+	}
+
+	.satoshiSpace {
+		margin: 4px 0;
+	}
+
+	.space {
+		margin: 8px 8px;
+	}
+
+	.percentSpace {
+		margin: 8px 16px;
 	}
 }
 </style>
