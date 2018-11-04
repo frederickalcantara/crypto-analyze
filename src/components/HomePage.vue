@@ -3,7 +3,7 @@
     <div class="same">
       <h1>Same Stop/Limit Percent Calculation</h1>
       <div class="sameInput">
-        <p class="satoshiSpace">
+        <p class="sameSatoshiSpace">
           <label for="sameSatoshi">Satoshi (BTC): &nbsp;</label>
           <input
             class="sameWidth"
@@ -15,7 +15,7 @@
             :input="positiveGain + negativeGain"
           >
         </p>
-        <p class="percentSpace">
+        <p class="samePercentSpace">
           <label for="Sell">Stop Loss / Sell Limit (%): &nbsp;</label>
           <input
             class="samePercent"
@@ -201,9 +201,12 @@ input[type="number"]::-webkit-outer-spin-button {
 	margin: 0;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 450px) and (max-width: 576px) {
 	.container {
 		grid-template-columns: 10px 1fr 10px;
+	}
+	.sameSatoshiSpace {
+		margin: 4px 0;
 	}
 }
 </style>
