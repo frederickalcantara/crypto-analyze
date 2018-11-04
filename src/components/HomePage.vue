@@ -127,6 +127,10 @@ export default {
 	grid-template-rows: 40% auto;
 }
 
+h1 {
+	margin: 12px;
+}
+
 .same {
 	grid-column-start: 2;
 	grid-column-end: 3;
@@ -158,6 +162,7 @@ export default {
 	justify-content: center;
 	align-items: center;
 	flex-direction: row;
+	margin-bottom: 16px;
 }
 
 .sameWidth {
@@ -181,7 +186,7 @@ export default {
 }
 
 .percentSpace {
-	margin: 8px 16px;
+	margin: 8px 36px;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
