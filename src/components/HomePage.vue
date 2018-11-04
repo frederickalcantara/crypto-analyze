@@ -142,7 +142,7 @@ export default {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-direction: row;
+	flex-direction: column;
 }
 
 .diffInput {
@@ -160,7 +160,15 @@ export default {
 	flex-direction: row;
 }
 
-.input-width {
+.sameWidth {
+	width: 95%;
+}
+
+.samePercent {
+	width: 70%;
+}
+
+.diffWidth {
 	width: 100%;
 }
 
@@ -168,27 +176,8 @@ export default {
 	margin: 8px 8px;
 }
 
-.samePercent {
-	width: 95%;
-}
-
-.diffWidth {
-	width: 85%;
-}
-
-.space {
-	margin: 8px 8px;
-}
-
-.sameInput {
-	flex-direction: row;
-}
-.diffInput {
-	flex-direction: column;
-}
-
 .diffPercent {
-	width: 40%;
+	width: 50%;
 }
 
 .percentSpace {
