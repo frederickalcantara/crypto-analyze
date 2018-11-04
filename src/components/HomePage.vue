@@ -16,7 +16,7 @@
           >
         </p>
         <p class="percentSpace">
-          <label for="Sell">Percent (%): &nbsp;</label>
+          <label for="Sell">Stop Loss / Sell Limit (%): &nbsp;</label>
           <input
             class="samePercent"
             type="number"
@@ -181,7 +181,7 @@ a {
 }
 
 .samePercent {
-	width: 100%;
+	width: 75%;
 }
 
 .diffPercent {
