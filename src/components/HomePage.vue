@@ -4,9 +4,9 @@
       <h1>Same Stop/Limit Percent Calculation</h1>
       <div class="sameInput">
         <p class="satoshiSpace">
-          <label for="sameSatoshi">Satoshi (BTC):</label>
+          <label for="sameSatoshi">Satoshi (BTC): &nbsp;</label>
           <input
-            class="input-width"
+            class="sameWidth"
             type="number"
             pattern="^\d{1,}(\.\d{0,4})?$"
             name="sameSatoshi"
@@ -37,9 +37,9 @@
       <h1>Different Stop/Limit Percent Calculation</h1>
       <div class="diffInput">
         <p class="satoshiSpace">
-          <label for="diffSatoshi">Satoshi (BTC):</label>
+          <label for="diffSatoshi">Satoshi (BTC): &nbsp;</label>
           <input
-            class="input-width"
+            class="diffWidth"
             type="number"
             pattern="^\d{1,}(\.\d{0,4})?$"
             name="diffSatoshi"
@@ -66,8 +66,8 @@
         </p>
       </div>
       <div class="diffOutput">
-      <p class="space">Sell Limit: {{ sellLimit }}</p>
-      <p class="space">Stop Loss: {{ stopLoss }}</p>
+        <p class="space">Sell Limit: {{ sellLimit }}</p>
+        <p class="space">Stop Loss: {{ stopLoss }}</p>
       </div>
     </div>
   </div>
@@ -157,7 +157,8 @@ export default {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-direction: column;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 .diffOutput {
@@ -187,6 +188,10 @@ a {
 	width: 100%;
 }
 
+.percentSpace {
+	margin: 8px 16px;
+}
+
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
 	-webkit-appearance: none;
@@ -196,6 +201,31 @@ input[type="number"]::-webkit-outer-spin-button {
 @media screen and (max-width: 800px) {
 	.container {
 		grid-template-columns: 10px 1fr 10px;
+	}
+}
+
+@media screen and (min-width: 801px) {
+	.diffWidth {
+		width: 100%;
+	}
+
+	.samePercent {
+		width: 50%;
+	}
+
+	.space {
+		margin: 8px 8px;
+	}
+
+	.sameInput {
+		flex-direction: row;
+	}
+	.diffInput {
+		flex-direction: column;
+	}
+
+	.diffPercent {
+		width: 40%;
 	}
 
 	.percentSpace {
