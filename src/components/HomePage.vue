@@ -4,9 +4,9 @@
       <h1>Same Stop/Limit Percent Calculation</h1>
       <div class="sameInput">
         <p class="satoshiSpace">
-          <label for="sameSatoshi">Satoshi:</label>
+          <label for="sameSatoshi">Satoshi (BTC):</label>
           <input
-            class="space input-width"
+            class="input-width"
             type="number"
             pattern="^\d{1,}(\.\d{0,4})?$"
             name="sameSatoshi"
@@ -16,16 +16,16 @@
           >
         </p>
         <p class="percentSpace">
-          <label for="Sell">Percent: &nbsp;</label>
+          <label for="Sell">Percent (%): &nbsp;</label>
           <input
-            class="percent"
+            class="samePercent"
             type="number"
             pattern="^\d{1,}(\.\d{0,4})?$"
             name="samePercent"
             :value="samePercent"
             @keyup="updateSamePercent"
             :input="positiveGain + negativeGain"
-          > %
+          >
         </p>
       </div>
       <div class="sameOutput">
@@ -37,9 +37,9 @@
       <h1>Different Stop/Limit Percent Calculation</h1>
       <div class="diffInput">
         <p class="satoshiSpace">
-          <label for="diffSatoshi">Satoshi:</label>
+          <label for="diffSatoshi">Satoshi (BTC):</label>
           <input
-            class="space input-width"
+            class="input-width"
             type="number"
             pattern="^\d{1,}(\.\d{0,4})?$"
             name="diffSatoshi"
@@ -49,20 +49,20 @@
           >
         </p>
         <p class="percentSpace">
-          <label for="Sell">Sell Limit: &nbsp;</label>
-          <input class="percent" type="number" pattern="^\d{1,}(\.\d{0,4})?$" name="sellPercent" :value="sellPercent" @keyup="updateSellPercent" :input="sellLimit"> %
+          <label for="Sell">Sell Limit (%): &nbsp;</label>
+          <input class="diffPercent" type="number" pattern="^\d{1,}(\.\d{0,4})?$" name="sellPercent" :value="sellPercent" @keyup="updateSellPercent" :input="sellLimit">
         </p>
         <p class="percentSpace">
-          <label for="Stop">Stop Loss: &nbsp;</label>
+          <label for="Stop">Stop Loss (%): &nbsp;</label>
           <input
-            class="percent"
+            class="diffPercent"
             type="number"
             pattern="^\d{1,}(\.\d{0,4})?$"
             name="stopPercent"
             :value="stopPercent"
             @keyup="updateStopPercent"
             :input="stopLoss"
-          > %
+          >
         </p>
       </div>
       <div class="diffOutput">
@@ -136,31 +136,35 @@ export default {
 .diff {
 	grid-column-start: 2;
 	grid-column-end: 3;
-	margin: 12px 0;
+	margin: 24px 0px 12px 0;
 }
 
 .sameInput {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-direction: column;
 }
 
 .sameOutput {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-direction: row;
 }
 
 .diffInput {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-direction: column;
 }
 
 .diffOutput {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-direction: row;
 }
 
 a {
@@ -168,19 +172,19 @@ a {
 }
 
 .input-width {
-	width: 80px;
-}
-
-.percent {
-	width: 50px;
+	width: 100%;
 }
 
 .space {
-	margin: 0 8px;
+	margin: 8px 8px;
 }
 
-.percentSpace {
-	margin: 0 16px;
+.samePercent {
+	width: 100%;
+}
+
+.diffPercent {
+	width: 100%;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
@@ -189,37 +193,9 @@ input[type="number"]::-webkit-outer-spin-button {
 	margin: 0;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 800px) {
 	.container {
 		grid-template-columns: 10px 1fr 10px;
-	}
-
-	.diff {
-		margin-top: 24px;
-	}
-
-	.sameInput {
-		flex-direction: column;
-	}
-
-	.sameOutput {
-		flex-direction: column;
-	}
-
-	.diffInput {
-		flex-direction: column;
-	}
-
-	.diffOutput {
-		flex-direction: column;
-	}
-
-	.satoshiSpace {
-		margin: 4px 0;
-	}
-
-	.space {
-		margin: 8px 8px;
 	}
 
 	.percentSpace {

@@ -2,7 +2,6 @@
   <div id="app">
     <Header />
     <main>
-      <img alt="Vue logo" src="./assets/logo.png">
       <home-page/>
     </main>
   </div>
@@ -33,6 +32,6 @@ body {
 }
 main {
 	text-align: center;
-	margin-top: 40px;
+	margin-top: 20px;
 }
 </style>
