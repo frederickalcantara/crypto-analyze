@@ -11,6 +11,7 @@ import { setContext, getLocation, getRouteData } from './utils'
 
 
 /* Plugins */
+import nuxt_plugin_googleanalytics_5e6ab4b2 from 'nuxt_plugin_googleanalytics_5e6ab4b2' // Source: ./google-analytics.js (ssr: false)
 
 
 // Component: <no-ssr>
@@ -133,6 +134,9 @@ async function createApp (ssrContext) {
   // Plugin execution
   
   
+  if (process.client) { 
+    if (typeof nuxt_plugin_googleanalytics_5e6ab4b2 === 'function') await nuxt_plugin_googleanalytics_5e6ab4b2(app.context, inject)
+  }
 
   // If server-side, wait for async component to be resolved first
   if (process.server && ssrContext && ssrContext.url) {
