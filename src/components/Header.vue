@@ -45,11 +45,17 @@ li {
 }
 
 a {
-	font-size: 24px;
+	font-size: 1.5em;
 	line-height: 1;
 	letter-spacing: 0.02em;
 	font-weight: 400;
 	color: #ffffff;
 	text-decoration: none;
+}
+
+@media screen and (max-width: 576px) {
+	a {
+		font-size: 1.25em;
+	}
 }
 </style>
