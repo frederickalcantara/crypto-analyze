@@ -1,29 +1,18 @@
-# crypto-analyze
+## Build Setup
 
-## Project setup
-```
-yarn install
-```
+``` bash
+# install dependencies
+$ npm install # Or yarn install
 
-### Compiles and hot-reloads for development
-```
-yarn run serve
-```
+# serve with hot reload at localhost:3000
+$ npm run dev
 
-### Compiles and minifies for production
-```
-yarn run build
-```
+# build for production and launch server
+$ npm run build
+$ npm start
 
-### Run your tests
-```
-yarn run test
+# generate static project
+$ npm run generate
 ```
 
-### Lints and fixes files
-```
-yarn run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
