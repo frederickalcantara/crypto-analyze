@@ -1,4 +1,11 @@
 module.exports = {
+  modules: [
+    ['@nuxtjs/google-analytics']
+  ],
+
+  'google-analytics': {
+    id: 'UA-128576342-1'
+  },
   /*
   ** Set source directory
   */
