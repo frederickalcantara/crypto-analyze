@@ -28,7 +28,6 @@ export default {
 header {
 	height: 56px;
 	background-color: #35495e;
-	color: #ffffff;
 }
 
 .navbar {
@@ -37,10 +36,20 @@ header {
 	display: flex;
 }
 
+li {
+	flex: 1; /* distribute all available space evenly among flex items */
+	display: flex; /* make each flex item a flex container, as well */
+	align-items: center; /* center text vertically (in this case) */
+	justify-content: center;
+	margin: 16px;
+}
+
 a {
 	font-size: 24px;
 	line-height: 1;
 	letter-spacing: 0.02em;
 	font-weight: 400;
+	color: #ffffff;
+	text-decoration: none;
 }
 </style>
