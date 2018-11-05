@@ -24,6 +24,19 @@ export default {
     DiffCoinLimit,
     Header,
     SameCoinLimit,
+  },
+  head () {
+    return {
+      title: 'Crypto Analyze',
+      meta: [
+        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Application that Calculates Stop Losses & Sell Limits for Crypto Investing'
+        }
+      ]
+    }
   }
 }
 </script>

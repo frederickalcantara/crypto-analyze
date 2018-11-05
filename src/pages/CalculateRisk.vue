@@ -15,6 +15,19 @@ export default {
   name: 'CalculateRisk',
   components: {
     Header,
+  },
+  head () {
+    return {
+      title: 'Crypto Analyze Risk',
+      meta: [
+        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Application that Calculates Risks for Crypto Investing'
+        }
+      ]
+    }
   }
 }
 </script>
