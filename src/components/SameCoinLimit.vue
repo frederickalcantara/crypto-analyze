@@ -6,7 +6,6 @@
         <input
           class="sameWidth"
           type="number"
-          pattern="^\d{1,}(\.\d{0,4})?$"
           name="sameSatoshi"
           :value="sameSatoshi"
           @keyup="updateSameSatoshi"
@@ -18,7 +17,6 @@
         <input
           class="samePercent"
           type="number"
-          pattern="^\d{1,}(\.\d{0,4})?$"
           name="samePercent"
           :value="samePercent"
           @keyup="updateSamePercent"

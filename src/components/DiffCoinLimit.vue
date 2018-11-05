@@ -6,7 +6,6 @@
         <input
           class="diffWidth"
           type="number"
-          pattern="^\d{1,}(\.\d{0,4})?$"
           name="diffSatoshi"
           :value="diffSatoshi"
           @keyup="updateDiffSatoshi"
@@ -22,7 +21,6 @@
         <input
           class="diffPercent"
           type="number"
-          pattern="^\d{1,}(\.\d{0,4})?$"
           name="stopPercent"
           :value="stopPercent"
           @keyup="updateStopPercent"
