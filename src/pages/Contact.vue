@@ -193,6 +193,12 @@ h1 {
 
 @media screen and (min-width: 480px) and (max-width: 586px) {
 	.form-button {
+		width: 55%;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.form-button {
 		width: 50%;
 	}
 }
