@@ -24,7 +24,7 @@
           <p class="hidden">
             <label>Don’t fill this out: <input name="bot-field"></label>
           </p>
-          <input class="form-button" type="submit" value="Send message" />
+          <input class="form-button" type="submit" value="Send Message" />
         </form>
       </div>
     </div>
@@ -106,7 +106,7 @@ h1 {
 	background-color: #eaeaee;
 	margin: 16px 16px;
 	width: 90%;
-	border-radius: 5px;
+	border-radius: 2.5%;
 }
 
 .form-field {
@@ -120,13 +120,13 @@ h1 {
 .form-button {
 	background-color: #dddddd;
 	height: 64px;
-	width: 50%;
-	font-size: 1.5rem;
+	width: 45%;
+	font-size: 1.25rem;
 	font-weight: 700;
 	position: relative;
 	overflow: hidden;
 	transform: translate3d(0, 0, 0);
-	border-radius: 5px;
+	border-radius: 2.5%;
 }
 
 .form-button:hover {
@@ -169,7 +169,7 @@ h1 {
 	.form-button {
 		background-color: #dddddd;
 		height: 64px;
-		width: 50%;
+		width: 55%;
 		font-size: 1.25rem;
 		text-align: center;
 	}
