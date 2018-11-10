@@ -9,7 +9,7 @@
 				</li>
 				<li>
 					<nuxt-link to="/contact">
-						Contact Us
+						Contact
 					</nuxt-link>
 				</li>
 			</ul>

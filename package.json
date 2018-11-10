@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "nuxt build",
     "generate": "nuxt generate",
-    "dev": "nuxt",
+    "dev": "cross-env NODE_ENV=development HOST=0.0.0.0 PORT=3000 nuxt",
     "start": "nuxt start"
   },
   "dependencies": {
@@ -22,6 +22,7 @@
     "@vue/cli-plugin-babel": "^3.1.1",
     "@vue/cli-plugin-pwa": "^3.1.1",
     "@vue/cli-service": "^3.1.1",
+    "cross-env": "^5.2.0",
     "vue-cli-plugin-meta": "^0.1.1",
     "vue-cli-plugin-nuxt-starter-template": "^0.0.6",
     "vue-template-compiler": "^2.5.17"

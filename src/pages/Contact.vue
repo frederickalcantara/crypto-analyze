@@ -4,8 +4,9 @@
     <div class="container">
       <div class="content">
         <h1 class="title">
-          Contact Us
+          Contact
         </h1>
+				<h2 class="subtitle">Feel free to send any feedback, suggestions, or questions</h2>
         <form class="contact" name="contact" netlify-honeypot="bot-field" action="" method="post" netlify>
           <input type="hidden" name="contact" value="contact">
 
@@ -24,7 +25,7 @@
           <p class="hidden">
             <label>Don’t fill this out: <input name="bot-field"></label>
           </p>
-          <input class="form-button" type="submit" value="Send Message" />
+          <button class="form-button" type="submit">Send Message</button>
         </form>
       </div>
     </div>
@@ -85,7 +86,12 @@ export default {
 	padding-top: 16px;
 }
 
-h1 {
+.title {
+	text-align: center;
+	margin-bottom: 24px;
+}
+
+.subtitle {
 	text-align: center;
 	margin-bottom: 32px;
 }
@@ -106,7 +112,7 @@ h1 {
 	background-color: #eaeaee;
 	margin: 16px 16px;
 	width: 90%;
-	border-radius: 2.5%;
+	border-radius: 5px;
 }
 
 .form-field {
@@ -120,13 +126,13 @@ h1 {
 .form-button {
 	background-color: #dddddd;
 	height: 64px;
-	width: 45%;
+	width: 50%;
 	font-size: 1.5rem;
 	font-weight: 700;
 	position: relative;
 	overflow: hidden;
 	transform: translate3d(0, 0, 0);
-	border-radius: 2.5%;
+	border-radius: 10px;
 }
 
 .form-button:hover {
@@ -169,7 +175,7 @@ h1 {
 	}
 
 	.form-button {
-		width: 55%;
+		width: 65%;
 		font-size: 1.25rem;
 		text-align: center;
 	}
@@ -181,7 +187,7 @@ h1 {
 	}
 
 	.form-button {
-		width: 45%;
+		width: 35%;
 		font-size: 1.25rem;
 	}
 }
@@ -192,7 +198,9 @@ h1 {
 	}
 
 	.form-button {
-		width: 55%;
+		width: 60%;
+		font-size: 1.25rem;
+		text-align: center;
 	}
 }
 </style>
