@@ -187,6 +187,10 @@ h1 {
 }
 
 @media screen and (max-width: 586px) {
+	.contact {
+		width: 90%;
+	}
+
 	.form-button {
 		width: 55%;
 	}
