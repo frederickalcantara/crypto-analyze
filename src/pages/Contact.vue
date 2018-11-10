@@ -126,6 +126,7 @@ h1 {
 	position: relative;
 	overflow: hidden;
 	transform: translate3d(0, 0, 0);
+	border-radius: 5px;
 }
 
 .form-button:hover {
@@ -161,7 +162,7 @@ h1 {
 		grid-template-columns: 10px 1fr 10px;
 	}
 	.contact {
-		height: 55vh;
+		height: 70vh;
 		width: 90%;
 	}
 
@@ -170,6 +171,7 @@ h1 {
 		height: 64px;
 		width: 50%;
 		font-size: 1.25rem;
+		text-align: center;
 	}
 }
 </style>
