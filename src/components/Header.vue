@@ -28,6 +28,9 @@ export default {
 header {
 	height: 56px;
 	background-color: #35495e;
+	font-family: Avenir, Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 .navbar {
