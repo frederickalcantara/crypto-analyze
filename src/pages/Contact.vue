@@ -79,7 +79,7 @@ export default {
 
 .contact {
 	background-color: #fafaff;
-	height: 70vh;
+	height: 425px;
 	width: 40vw;
 	margin: 0 auto;
 	padding-top: 16px;
@@ -162,7 +162,6 @@ h1 {
 		grid-template-columns: 10px 1fr 10px;
 	}
 	.contact {
-		height: 70%;
 		width: 90%;
 	}
 
@@ -180,7 +179,6 @@ h1 {
 		grid-template-columns: 10px 1fr 10px;
 	}
 	.contact {
-		height: 70%;
 		width: 90%;
 	}
 
