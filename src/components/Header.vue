@@ -8,8 +8,8 @@
 					</nuxt-link>
 				</li>
 				<li>
-					<nuxt-link to="/calculaterisk">
-						Risk Calculator
+					<nuxt-link to="/contact">
+						Contact Us
 					</nuxt-link>
 				</li>
 			</ul>

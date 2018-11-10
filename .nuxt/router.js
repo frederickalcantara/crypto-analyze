@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 const _625917a2 = () => import('../src/pages/CalculateRisk.vue' /* webpackChunkName: "pages/CalculateRisk" */).then(m => m.default || m)
+const _6b7aaaa6 = () => import('../src/pages/Contact.vue' /* webpackChunkName: "pages/Contact" */).then(m => m.default || m)
 const _08615fbf = () => import('../src/pages/index.vue' /* webpackChunkName: "pages/index" */).then(m => m.default || m)
 
 Vue.use(Router)
@@ -67,6 +68,11 @@ export function createRouter () {
 			path: "/CalculateRisk",
 			component: _625917a2,
 			name: "CalculateRisk"
+		},
+		{
+			path: "/Contact",
+			component: _6b7aaaa6,
+			name: "Contact"
 		},
 		{
 			path: "/",
