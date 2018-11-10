@@ -174,4 +174,22 @@ h1 {
 		text-align: center;
 	}
 }
+
+@media screen and (min-width: 768px) and (max-width: 960px) {
+	.container {
+		grid-template-columns: 10px 1fr 10px;
+	}
+	.contact {
+		height: 70%;
+		width: 90%;
+	}
+
+	.form-button {
+		background-color: #dddddd;
+		height: 64px;
+		width: 55%;
+		font-size: 1.25rem;
+		text-align: center;
+	}
+}
 </style>
