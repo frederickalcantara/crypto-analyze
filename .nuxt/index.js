@@ -11,6 +11,7 @@ import { setContext, getLocation, getRouteData } from './utils'
 
 
 /* Plugins */
+import nuxt_plugin_googletagmanager_92377204 from 'nuxt_plugin_googletagmanager_92377204' // Source: ./google-tag-manager.js (ssr: false)
 import nuxt_plugin_googleanalytics_5e6ab4b2 from 'nuxt_plugin_googleanalytics_5e6ab4b2' // Source: ./google-analytics.js (ssr: false)
 
 
@@ -135,6 +136,7 @@ async function createApp (ssrContext) {
   
   
   if (process.client) { 
+    if (typeof nuxt_plugin_googletagmanager_92377204 === 'function') await nuxt_plugin_googletagmanager_92377204(app.context, inject)
     if (typeof nuxt_plugin_googleanalytics_5e6ab4b2 === 'function') await nuxt_plugin_googleanalytics_5e6ab4b2(app.context, inject)
   }
 
