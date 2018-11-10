@@ -725,6 +725,11 @@
   dependencies:
     vue-analytics "^5.4.0"
 
+"@nuxtjs/google-tag-manager@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/google-tag-manager/-/google-tag-manager-2.1.0.tgz#82bb4acbea7f63bbd9a0ccea4daac39feb3d43b9"
+  integrity sha512-NmEqiidNC/sPjizURKT8fMIe41Q/R2egIFICeOfNcCqZfxJjHttUjQaYMJ+ef7bn50N724tCain+vQocUZjliw==
+
 "@nuxtjs/opencollective@^0.1.0":
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/@nuxtjs/opencollective/-/opencollective-0.1.0.tgz#5dfb10b2148ce77e9590bca9b9ed6e71d2a500eb"
