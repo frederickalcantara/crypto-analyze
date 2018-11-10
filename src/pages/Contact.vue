@@ -191,10 +191,10 @@ h1 {
 	}
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 450px) {
 	.form-button {
-		width: 40%;
-		font-size: 1.25rem;
+		width: 50%;
+		font-size: 1rem;
 	}
 }
 </style>
