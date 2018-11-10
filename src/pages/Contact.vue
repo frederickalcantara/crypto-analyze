@@ -157,23 +157,6 @@ h1 {
 	transition: 0s;
 }
 
-@media screen and (max-width: 768px) {
-	.container {
-		grid-template-columns: 10px 1fr 10px;
-	}
-	.contact {
-		width: 90%;
-	}
-
-	.form-button {
-		background-color: #dddddd;
-		height: 64px;
-		width: 45%;
-		font-size: 1.25rem;
-		text-align: center;
-	}
-}
-
 @media screen and (min-width: 769px) and (max-width: 960px) {
 	.container {
 		grid-template-columns: 10px 1fr 10px;
@@ -186,6 +169,23 @@ h1 {
 		background-color: #dddddd;
 		height: 64px;
 		width: 55%;
+		font-size: 1.25rem;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.container {
+		grid-template-columns: 10px 1fr 10px;
+	}
+	.contact {
+		width: 90%;
+	}
+
+	.form-button {
+		background-color: #dddddd;
+		height: 64px;
+		width: 45%;
 		font-size: 1.25rem;
 		text-align: center;
 	}
