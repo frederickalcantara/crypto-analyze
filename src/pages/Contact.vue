@@ -174,7 +174,7 @@ h1 {
 	}
 }
 
-@media screen and (min-width: 768px) and (max-width: 960px) {
+@media screen and (min-width: 769px) and (max-width: 960px) {
 	.container {
 		grid-template-columns: 10px 1fr 10px;
 	}
