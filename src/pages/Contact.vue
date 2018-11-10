@@ -156,7 +156,7 @@ h1 {
 	transition: 0s;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
 	.container {
 		grid-template-columns: 10px 1fr 10px;
 	}
