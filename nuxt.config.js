@@ -1,8 +1,15 @@
 module.exports = {
   modules: [
-    ['@nuxtjs/google-analytics'],
-    ['@nuxtjs/google-tag-manager', { id: 'GTM-K6TVC66' }]
+    ['@nuxtjs/google-analytics',],
+    ['@nuxtjs/google-tag-manager', { id: 'GTM-K6TVC66' }],
+    ['@nuxtjs/pwa',],
   ],
+
+  workbox: {
+    importScripts: [
+      './registerServiceWorker.js'
+    ]
+  },
 
   'google-analytics': {
     id: 'UA-128576342-1'

@@ -155,4 +155,14 @@ h1 {
 	opacity: 0.2;
 	transition: 0s;
 }
+
+@media screen and (max-width: 576px) {
+	.container {
+		grid-template-columns: 10px 1fr 10px;
+	}
+	.contact {
+		height: 55vh;
+		width: 90%;
+	}
+}
 </style>
