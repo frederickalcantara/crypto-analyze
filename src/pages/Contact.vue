@@ -199,7 +199,7 @@ h1 {
 
 @media screen and (max-width: 450px) {
 	.form-button {
-		width: 50%;
+		width: 55%;
 	}
 }
 </style>
