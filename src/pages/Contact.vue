@@ -121,7 +121,7 @@ h1 {
 	background-color: #dddddd;
 	height: 64px;
 	width: 45%;
-	font-size: 1.25rem;
+	font-size: 1.5rem;
 	font-weight: 700;
 	position: relative;
 	overflow: hidden;
@@ -188,6 +188,13 @@ h1 {
 		width: 55%;
 		font-size: 1.25rem;
 		text-align: center;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.form-button {
+		width: 45%;
+		font-size: 1.25rem;
 	}
 }
 </style>
