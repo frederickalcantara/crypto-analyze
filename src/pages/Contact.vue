@@ -168,7 +168,7 @@ h1 {
 	.form-button {
 		background-color: #dddddd;
 		height: 64px;
-		width: 55%;
+		width: 45%;
 		font-size: 1.25rem;
 		text-align: center;
 	}
