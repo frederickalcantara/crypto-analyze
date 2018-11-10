@@ -179,7 +179,7 @@ h1 {
 		grid-template-columns: 10px 1fr 10px;
 	}
 	.contact {
-		width: 90%;
+		width: 45%;
 	}
 
 	.form-button {
