@@ -181,7 +181,7 @@ h1 {
 	}
 
 	.form-button {
-		width: 45%;
+		width: 40%;
 		font-size: 1.25rem;
 	}
 }
