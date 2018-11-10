@@ -9,7 +9,7 @@ const layouts = { "_default": _6f6c098b }
 
 
 export default {
-  head: {"title":"Welcome to Nuxt!","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"Nuxt.js project"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"}],"style":[],"script":[{"src":"\u002F\u002Fwww.googletagmanager.com\u002Fgtm.js?id=GTM-K6TVC66&l=dataLayer","async":true}]},
+  head: {"title":"Welcome to Nuxt!","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"Nuxt.js project"},{"hid":"mobile-web-app-capable","name":"mobile-web-app-capable","content":"yes"},{"hid":"apple-mobile-web-app-title","name":"apple-mobile-web-app-title","content":"crypto-analyze"},{"hid":"theme-color","name":"theme-color","content":"#3B8070"},{"hid":"og:type","name":"og:type","property":"og:type","content":"website"},{"hid":"og:title","name":"og:title","property":"og:title","content":"crypto-analyze"},{"hid":"og:site_name","name":"og:site_name","property":"og:site_name","content":"crypto-analyze"},{"hid":"og:description","name":"og:description","property":"og:description","content":"``` bash # install dependencies $ npm install # Or yarn install"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"rel":"manifest","href":"\u002F_nuxt\u002Fmanifest.1d058baf.json"}],"style":[],"script":[{"src":"\u002F\u002Fwww.googletagmanager.com\u002Fgtm.js?id=GTM-K6TVC66&l=dataLayer","async":true}],"htmlAttrs":{"lang":"en"}},
   render(h, props) {
     const loadingEl = h('nuxt-loading', { ref: 'loading' })
     const layoutEl = h(this.layout || 'nuxt')

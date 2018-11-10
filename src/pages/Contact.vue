@@ -121,7 +121,7 @@ h1 {
 	background-color: #dddddd;
 	height: 64px;
 	width: 50%;
-	font-size: 24px;
+	font-size: 1.5rem;
 	font-weight: 700;
 	position: relative;
 	overflow: hidden;
@@ -163,6 +163,13 @@ h1 {
 	.contact {
 		height: 55vh;
 		width: 90%;
+	}
+
+	.form-button {
+		background-color: #dddddd;
+		height: 64px;
+		width: 50%;
+		font-size: 1.25rem;
 	}
 }
 </style>
