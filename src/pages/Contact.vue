@@ -7,7 +7,7 @@
           Contact
         </h1>
 				<h2 class="subtitle">Feel free to send any feedback, suggestions, or questions</h2>
-        <form class="contact" name="contact" netlify-honeypot="bot-field" action="" method="post" netlify>
+        <form class="contact" name="contact" netlify-honeypot="bot-field" action="/contact" method="post" netlify>
           <input type="hidden" name="contact" value="contact">
 
           <label class="form-label" for="name">
